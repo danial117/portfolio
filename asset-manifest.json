@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/static/css/main.e4e62576.css",
+    "main.js": "/static/js/main.dbf6531f.js",
+    "static/js/787.7da95b79.chunk.js": "/static/js/787.7da95b79.chunk.js",
+    "static/media/mountains.png": "/static/media/mountains.6bceb498a0e1e0a70b47.png",
+    "static/media/Screenshot (426).png": "/static/media/Screenshot (426).7342d23711ba7a31e87e.png",
+    "static/media/people.webp": "/static/media/people.58eb2f8d793cb5ba671a.webp",
+    "static/media/WhatsApp_Image_2023-01-31_at_18.37.55-removebg-preview.png": "/static/media/WhatsApp_Image_2023-01-31_at_18.37.55-removebg-preview.026ae28f5e63bcff1827.png",
+    "static/media/Screenshot (427).png": "/static/media/Screenshot (427).e1fd5c3bd332f8e962a9.png",
+    "static/media/Screenshot (425).png": "/static/media/Screenshot (425).d2a6c01b2f743b98b51e.png",
+    "static/media/stars.png": "/static/media/stars.a979f6ed7ad00c7ea0b2.png",
+    "static/media/planets.png": "/static/media/planets.827213af57ae82d007cd.png",
+    "static/media/sun.png": "/static/media/sun.1122608e12712a52470d.png",
+    "static/media/Screenshot (424).png": "/static/media/Screenshot (424).49171b3abee7e32e9b22.png",
+    "index.html": "/index.html",
+    "main.e4e62576.css.map": "/static/css/main.e4e62576.css.map",
+    "main.dbf6531f.js.map": "/static/js/main.dbf6531f.js.map",
+    "787.7da95b79.chunk.js.map": "/static/js/787.7da95b79.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e4e62576.css",
+    "static/js/main.dbf6531f.js"
+  ]
+}
