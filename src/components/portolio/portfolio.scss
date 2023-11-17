@@ -1,0 +1,136 @@
+@import "../../app.scss";
+
+.portfolio {
+  position: relative;
+
+  .progress {
+    position: sticky;
+    top: 0;
+    left: 0;
+    padding-top: 50px;
+    text-align: center;
+    color: orange;
+    font-size: 36px;
+    @include mobile {
+
+      padding-top: 40px;
+
+      font-size: 33px;
+    }
+
+    .progressBar {
+      background-color: orange; /* Adjusted color to match your theme */
+      height: 10px;
+      @include mobile {
+
+        height: 8px;
+      }
+    }
+  }
+
+  .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh; /* Adjusted to use viewport height */
+    width: 100%;
+    overflow: hidden;
+
+    @include mobile {
+      height: 100vh;
+      width: auto;
+
+    }
+
+    .wrapper {
+      max-width: 1366px;
+      height: 100%;
+      margin: auto;
+      display: flex;
+      gap: 50px;
+      align-items: center;
+      justify-content: center;
+      @include mobile {
+        max-width: 738px;
+        flex-direction: column;
+        gap: 30px;
+
+      }
+
+      .imageContainer {
+        flex: 1;
+        height: 50%;
+        margin-left: 55px;
+        @include mobile {
+          margin-top: 75px;
+          height: 50%;
+          margin-left: 40px;
+          order: 1; /* Display image above text in mobile */
+        }
+
+        img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+        }
+      }
+
+      .textContainer {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        text-align: left;
+        @include mobile {
+          gap: 10px;
+          order: 2; /* Display text below image in mobile */
+        }
+
+        h2 {
+          font-size: 45px;
+          white-space: nowrap;
+          margin: 0; /* Removed default margin */
+          @include mobile {
+            margin-top: 300px;
+            font-size: 35px;
+            margin-left: 35px;
+          }
+        }
+
+        p {
+          color: gray;
+          font-size: 20px;
+          margin: 0; /* Removed default margin */
+          @include mobile {
+            font-size: 25px;
+            margin-left: 35px;
+          }
+        }
+
+        button {
+          padding: 10px;
+          background-color: orange;
+          color: black;
+          font-size: 20px;
+          font-weight: bold;
+          border: none;
+          cursor: pointer;
+          border-radius: 15px;
+          @include mobile {
+            padding: 5px;
+            margin-left: 35px;
+            font-size: 30px;
+
+
+          }
+
+          &:hover {
+            background-color: gray;
+            color: white;
+            font-weight: bold;
+          }
+        }
+      }
+    }
+  }
+}

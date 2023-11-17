@@ -1,0 +1,133 @@
+
+@import "../../app.scss";
+
+
+.slidingTextContainer {
+  position: absolute;
+  font-size: 50vh;
+  bottom: -65px;
+  white-space: nowrap;
+  width: 50%;
+  font-weight: bold;
+  background: linear-gradient(180deg, #00232C, #43464A);
+  -webkit-background-clip: text;
+  color: transparent;
+  //overflow: hidden;
+}
+
+
+//
+.wrapper {
+  max-width: 1366px;
+  height: 100%;
+  margin: auto;
+
+  .textContainer {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 40px;
+    width: 50%;
+
+
+    h2 {
+      font-size: 40px;
+      color: #E33E0A; /* White text color for better contrast */
+      letter-spacing: 10px;
+      font-weight: bold;
+    }
+
+    h1 {
+      font-size: 55px;
+      transition: font-size 0.3s ease; /* Add a smooth transition effect */
+    }
+
+
+    .button {
+
+      @include mobile {
+
+        font-weight: 300;
+        font-size: 17px;
+        margin: auto;
+            display: flex;
+        flex-direction: row;
+        /* Increase font size for mobile devices */
+      }
+
+      button {
+        padding: 20px;
+        border: 1px solid white;
+        border-radius: 10px;
+        background-color: transparent;
+        color: white;
+        margin-right: 20px;
+        font-size: 17px;
+        cursor: pointer;
+        font-weight: 300;
+
+        &:hover {
+          background-color: white; /* Change background color on hover */
+          color: #00232C; /* Change text color on hover */
+          transform: scale(1.2); /* Scale the button on hover for a zoom effect */
+        }
+      }
+    }
+
+
+    img {
+      width: 50px;
+    }
+  }
+}
+
+//
+.image-container {
+  height: 100%;
+  position: absolute;
+  top: 0px;
+  right: 0;
+
+  @include mobile {
+
+     /* Increase font size for mobile devices */
+  }
+
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+}
+
+.slidingTextContainer {
+  position: absolute;
+  font-size: 50vh;
+  bottom: -65px;
+  white-space: nowrap;
+  color: #ffffff09;
+  width: 50%;
+  font-weight: bold;
+  overflow:hidden;
+}
+
+
+// Media query for small screens
+@media (max-width: 768px) {
+  .wrapper {
+    padding: 20px; // Add padding to the wrapper on small screens
+  }
+
+  .textContainer {
+    gap: 20px; // Reduce the gap between elements on small screens
+  }
+
+  h3 {
+    font-size: 24px; // Adjust font size for better readability on small screens
+  }
+
+
+}
+
+
+
